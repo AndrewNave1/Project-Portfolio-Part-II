@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      Estimate web page
+      Author: Andrew Nave
+
+      Filename: estimate.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Fan Trick Fine Art Photography - Estimate</title>
+   <link rel="stylesheet" media="screen and (max-device-width: 999px)" href="fthand.css" />
+   <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="fantrick.css" />
+   <!--[if lt IE 9]>
+      <link rel="stylesheet" href="ftie.css" />
+   <![endif]-->
+   <link href='http://fonts.googleapis.com/css?family=Mr+Bedfort' rel='stylesheet' type='text/css'>
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1>
+            <img src="images/ftlogo.png" alt="Fan Trick Fine Art Photography" title="" />
+         </h1>
+      </header>
+
+      <nav>
+         <ul>
+            <li><a href="about.html">About</a></li>
+			<li><a href="estimate.html">Estimate</a></li>
+			<li><a href="SquareRoots.php">Square Roots</a></li>
+         </ul>
+      </nav>
+        
+      <article>
+         <h2>Estimate</h2>
+         <p>These donuts will blow your socks off.</p>
+         <form id="estimateform">
+            <fieldset>
+               <legend><span>Donuts</span></legend>
+               <input type="number" min="1" id="donutnum" value="1" />
+               <label for="donutnum">
+                  <p># of Donuts</p>
+                  <p>$5</p>
+               </label>
+
+               <input type="number" min="1" id="donuttoppings" value="1" />
+               <label for="donuttoppings">
+                  <p># of toppings</p>
+               </label>
+
+               <input type="checkbox" id="coffee" />
+               <label for="coffee">
+                  <p>Coffee</p>
+                  <p>$4</p>
+               </label>
+
+               <input type="checkbox" id="donuthole" />
+               <label for="donuthole">
+                  <p>Basket of Donut Holes</p>
+                  <p>$7</p>
+               </label>
+            </fieldset>
+            <fieldset>
+               <legend><span>Travel</span></legend>
+               <input type="number" id="distance" value="0" />
+               <label for="distance">
+                  <p>Distance from Raytown, MO</p>
+                  <p>$1/mi per donut</p>
+               </label>
+            </fieldset>
+         </form>
+      </article>
+      <aside>
+         <p>Total Estimate: <span id="estimate"></span></p>
+      </aside>
+      <footer>
+         <p>Fan Trick Fine Art Photography &bull; Raytown, Missouri</p>
+      </footer>
+   </div>
+   <script src="ft.js"></script>
+</body>
+</html>
